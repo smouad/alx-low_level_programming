@@ -20,4 +20,5 @@ int main(void)
 		C++;
 	}
 	putchar('\n');
+	return (0);
 }
