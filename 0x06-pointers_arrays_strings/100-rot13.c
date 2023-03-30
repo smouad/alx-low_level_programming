@@ -2,10 +2,10 @@
 
 /**
  * rot13 -  a   function that encodes a string using rot13.
- * @s: An input string to encode using rot13
+ * @str: An input string to encode using rot13
  * Return: An encode string
  */
-char *rot13(char *s)
+char *rot13(char *str)
 {
 	char *input;
 	char *output;
@@ -14,16 +14,19 @@ char *rot13(char *s)
 	input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	i = 0;
-	while (s[i] != '\0')
+	while (str[i])
 	{
 		j = 0;
 		while (input[j])
 		{
-			if (s[i] == input[j])
-				s[i] = output[j];
+			if (str[i] == input[j])
+			{
+				str[i] = output[j];
+				break ;
+			}
 			j++;
 		}
 		i++;
 	}
-	return (s);
+	return (str);
 }
