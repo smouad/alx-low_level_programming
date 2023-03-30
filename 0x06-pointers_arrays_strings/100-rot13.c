@@ -7,19 +7,21 @@
  */
 char *rot13(char *s)
 {
-	int i = 0;
+	char *input;
+	char *output;
+	int i, j;
 
+	input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	i = 0;
 	while (s[i] != '\0')
 	{
-		while ((s[i] >= 'a' && s[i] <= 'z') ||
-				(s[i] >= 'A' && s[i] <= 'Z'))
+		j = 0;
+		while (input[j])
 		{
-			if ((s[i] >= 'a' && s[i] <= 'm') ||
-					(s[i] >= 'A' && s[i] <= 'M'))
-				s[i] += 13;
-			else
-				s[i] -= 13;
-			i++;
+			if (s[i] == input[j])
+				s[i] = output[j];
+			j++;
 		}
 		i++;
 	}
