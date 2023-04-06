@@ -4,7 +4,7 @@
  * _pow_recursion - calculate with recursion @x to the power of @y
  * @x: first int
  * @y: second int
- * Return: the result and -1 if @y less tha 0 
+ * Return: the result and -1 if @y less tha 0
  */
 
 int _pow_recursion(int x, int y)
