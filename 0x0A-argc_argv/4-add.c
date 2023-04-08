@@ -13,7 +13,6 @@
 int main(int ac, char *av[])
 {
 	int i, j, length, sum;
-	char *ptr;
 
 	if (ac < 2)
 		printf("0\n");
