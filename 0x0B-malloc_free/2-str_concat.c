@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdlib.h>
 
 /**
  * str_concat - concatinate @s1 and @s2 together in a new string
@@ -12,6 +12,10 @@ char *str_concat(char *s1, char *s2)
 	int i, j, len_s1, len_s2;
 	char *str;
 	
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";i
 	for (len_s1 = 0; s1[len_s1]; len_s1++)
 		;
 	for (len_s2 = 0; s2[len_s2]; len_s2++)
