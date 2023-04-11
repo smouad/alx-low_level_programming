@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * create_array - create an aray of size @size and fill it with @c
