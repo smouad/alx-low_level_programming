@@ -30,7 +30,9 @@ char *_strdup(char *str)
     char *dup;
 
     len = _strlen(str);
-    dup = malloc(len + 1) if (!dup) return (NULL);
+    dup = malloc(len + 1);
+    if (!dup)
+        return (NULL);
     while (str[i])
         dup[i] = str[i];
     dup[i] = '\0';
