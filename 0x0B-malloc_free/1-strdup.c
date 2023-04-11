@@ -8,14 +8,14 @@
 
 int _strlen(char *str)
 {
-    int i = 0;
+	int i = 0;
 
-    while (str)
-    {
-        str++;
-        i++;
-    }
-    return (i);
+	while (str)
+	{
+		str++;
+		i++;
+	}
+	return (i);
 }
 
 /**
@@ -26,15 +26,15 @@ int _strlen(char *str)
 
 char *_strdup(char *str)
 {
-    int len, i = 0;
-    char *dup;
+	int len, i = 0;
+	char *dup;
 
-    len = _strlen(str);
-    dup = malloc(len + 1);
-    if (!dup)
-        return (NULL);
-    while (str[i])
-        dup[i] = str[i];
-    dup[i] = '\0';
-    return (dup);
+	len = _strlen(str);
+	dup = malloc(len + 1);
+	if (!dup)
+		return (NULL);
+	while (str[i])
+		dup[i] = str[i];
+	dup[i] = '\0';
+	return (dup);
 }
