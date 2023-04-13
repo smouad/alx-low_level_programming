@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <main.h>
 /**
  * malloc_checked - allocate memory and if it fails exit with status 98
  * @b: number of bytes to allocat
@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	void *ptr;
 
 	ptr = malloc(b);
-	if (ptr == NULL)
+	if (!ptr)
 		exit(98);
 	return (ptr);
 }
