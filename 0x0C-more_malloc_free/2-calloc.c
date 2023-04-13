@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * _calloc - allocate @nmemb of memory size of @size memorry is set to 0
  * @nmemb: number of ellements
@@ -9,7 +9,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	char *ptr;
 	unsigned int i;
 
 	if (size == 0 || nmemb == 0)
