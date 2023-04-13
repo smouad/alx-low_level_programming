@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * malloc_checked - allocate memory and if it fails exit with status 98
