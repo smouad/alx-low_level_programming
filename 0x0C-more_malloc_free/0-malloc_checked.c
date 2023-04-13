@@ -10,7 +10,8 @@ void *malloc_checked(unsigned int b)
 {
 	void *content;
 
-	content = malloc(b * sizeof(void));
+	content = malloc(b);
 	if (!content)
 		exit(98);
+	return (content)
 }
