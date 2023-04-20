@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  * get_op_func - selects the correct function to perform the operation
@@ -21,7 +22,7 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while (i < 5)
+	while (ops[i].op)
 	{
 		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
