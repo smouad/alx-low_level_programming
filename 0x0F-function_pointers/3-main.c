@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error: Incorect argumen number!\n");
-		exit(1);
+		exit(98);
 	}
 
 	a = atoi(argv[1]);
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	if (op_func == NULL)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(98);
 	}
 
 	result = op_func(a, b);
