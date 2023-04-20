@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stddef.h>
+#include "3-calc.h"
 
 /**
  * op_add - adds @a and @b
