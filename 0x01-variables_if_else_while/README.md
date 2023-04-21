@@ -425,17 +425,20 @@ This program will assign a random number to the variable `n` each time it is exe
 
 - [Source Code](https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c)
 
-> Compiled with: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative`
+> Compiled with:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative
+>```
 
 > Output:
-```
-$ ./0-positive_or_negative
--1 is negative
-$ ./0-positive_or_negative
-0 is zero
-$ ./0-positive_or_negative
-1 is positive
-```
+>```
+>$ ./0-positive_or_negative
+>-1 is negative
+>$ ./0-positive_or_negative
+>0 is zero
+>$ ./0-positive_or_negative
+>1 is positive
+>```
 
 
 </details>
@@ -460,17 +463,21 @@ This program will assign a random number to the variable `n` each time it is exe
         -   if the last digit of `n` is less than 6 and not 0: the string `and is less than 6 and not 0`
     -   followed by a new line
 - [Source Code](./https://github.com/holbertonschool/0x01.c/blob/master/1-last_digit_c)
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-last_digit.c -o 1-last_digit`
+
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-last_digit.c -o 1-last_digit`
+>```
 
 > Output:
-```
-$ ./1-last_digit
-Last digit of 98 is 8 and is greater than 5
-$ ./1-last_digit
-Last digit of 0 is 0 and is 0
-$ ./1-last_digit
-Last digit of 402 is 2 and is less than 6 and not 0
-```
+>```
+>$ ./1-last_digit
+>Last digit of 98 is 8 and is greater than 5
+>$ ./1-last_digit
+>Last digit of 0 is 0 and is 0
+>$ ./1-last_digit
+>Last digit of 402 is 2 and is less than 6 and not 0
+>```
 
 </details>
 
@@ -487,13 +494,16 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
 -   All your code should be in the `main` function
 -   You can only use `putchar` twice in your code
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet
+>```
 
 > Output:
-```
-$ ./2-print_alphabet
-abcdefghijklmnopqrstuvwxyz
-```
+>```
+>$ ./2-print_alphabet
+>abcdefghijklmnopqrstuvwxyz
+>```
 
 </details>
 
@@ -508,13 +518,16 @@ Write a program that prints the alphabet in lowercase, and then in uppercase, fo
 -   All your code should be in the `main` function
 -   You can only use `putchar` three times in your code
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-print_alphabets.c -o 3-print_alphabets`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-print_alphabets.c -o 3-print_alphabets
+>```
 
 > Output:
-```
-$ ./3-print_alphabets
-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-```
+>```
+>$ ./3-print_alphabets
+>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+>```
 
 </details>
 
@@ -532,15 +545,18 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
 -   All your code should be in the `main` function
 -   You can only use `putchar` twice in your code
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt`
-> Output:
-```
-$ ./4-print_alphabt
-abcdfghijklmnoprstuvwxyz
-$ ./4-print_alphabt | grep [eq]
-$
-```
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt
+>```
 
+> Output:
+>```
+>$ ./4-print_alphabt
+>abcdfghijklmnoprstuvwxyz
+>$ ./4-print_alphabt | grep [eq]
+>$
+>```
 
 </details>
 
@@ -555,13 +571,16 @@ Write a program that prints all single digit numbers of base 10 starting from `0
 
 -   All your code should be in the `main` function
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-print_numbers.c -o 5-print_numbers`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-print_numbers.c -o 5-print_numbers
+>```
 
 > Output:
-```
-$ ./5-print_numbers
-0123456789
-```
+>```
+>$ ./5-print_numbers
+>0123456789
+>```
 
 </details>
 
@@ -584,7 +603,10 @@ Write a program that prints all single digit numbers of base 10 starting from `0
     - So we add `0 == 48` 48 is the decimal value to our single digit integer to convert it into its character representation.
     - Better explanation [here](https://stackoverflow.com/questions/21255038/what-does-putchar0-num-do)
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-print_numberz.c -o 6-print_numberz`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-print_numberz.c -o 6-print_numberz
+>```
 
 > Output:
 > ```
@@ -607,7 +629,10 @@ Write a program that prints the lowercase alphabet in reverse, followed by a new
 -   All your code should be in the `main` function
 -   You can only use `putchar` twice in your code
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-print_tebahpla.c -o 7-print_tebahpla`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-print_tebahpla.c -o 7-print_tebahpla
+>```
 
 > Output:
 > ```
@@ -630,7 +655,10 @@ Write a program that prints all the numbers of base 16 in lowercase, followed by
 -   All your code should be in the `main` function
 -   You can only use `putchar` three times in your code
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-print_base16.c -o 8-print_base16`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-print_base16.c -o 8-print_base16
+>```
 
 > Output:
 > ```
@@ -656,7 +684,10 @@ Write a program that prints all possible combinations of single-digit numbers.
 -   You can only use `putchar` four times maximum in your code
 -   You are not allowed to use any variable of type `char`
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-print_comb.c -o 9-print_comb`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-print_comb.c -o 9-print_comb
+>```
 
 > Output:
 > ```
@@ -685,7 +716,10 @@ Write a program that prints all possible different combinations of two digits.
 -   You are not allowed to use any variable of type `char`
 -   All your code should be in the `main` function
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-print_comb3.c -o 100-print_comb3`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-print_comb3.c -o 100-print_comb3
+>```
 
 > Output:
 > ```
@@ -714,7 +748,10 @@ Write a program that prints all possible different combinations of three digits.
 -   You are not allowed to use any variable of type `char`
 -   All your code should be in the `main` function
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-print_comb4.c -o 101-print_comb4`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-print_comb4.c -o 101-print_comb4`
+>```
 
 > Output:
 > ```
@@ -744,7 +781,10 @@ Write a program that prints all possible combinations of two two-digit numbers.
 -   You are not allowed to use any variable of type `char`
 -   All your code should be in the `main` function
 
-> Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-print_comb5.c -o 102-print_comb5`
+> Compile this way:
+>```
+>gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-print_comb5.c -o 102-print_comb5
+>```
 
 > Output:
 > ```
