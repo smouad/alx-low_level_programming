@@ -4,10 +4,15 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * struct s_print - to print diffrent types
+ * @c: the format
+ * @print_func: pointer to the function to print
+ */
 typedef struct s_print
 {
-    char *c;
-    void (*print_func)(va_list);
+	char *c;
+	void (*print_func)(va_list);
 } t_print;
 
 int sum_them_all(const unsigned int n, ...);
