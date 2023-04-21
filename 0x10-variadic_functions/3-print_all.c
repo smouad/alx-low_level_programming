@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - prints a character
+ * print_c - prints a character
  * @args: va_list containing informations about the character to print
  */
 
@@ -14,7 +14,7 @@ void print_c(va_list args)
 }
 
 /**
- * print_int - prints an integer
+ * print_i - prints an integer
  * @args: va_list containing informations about the integer to print
  */
 
@@ -27,7 +27,7 @@ void print_i(va_list args)
 }
 
 /**
- * print_float - prints a float
+ * print_f - prints a float
  * @args: va_list containing informations about the float to print
  */
 
@@ -40,7 +40,7 @@ void print_f(va_list args)
 }
 
 /**
- * print_string - prints a string
+ * print_s - prints a string
  * @args: va_list containing informations about the string to print
  */
 
