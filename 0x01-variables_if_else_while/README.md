@@ -31,23 +31,6 @@
 - [What is the `ASCII` character set](#what-is-the-ascii-character-set)
 - [What are the purpose of the `gcc` flags `-m32` and `-m64`](#what-are-the-purpose-of-the-gcc-flags-m32-and-m64)
 
-## Tasks
-- [0. Positive anything is better than negative nothing](#task-0)
-- [1. The last digit](#task-1)
-- [2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](#task-2)
-- [3. alphABET](#task-3)
-- [4. When I was having that alphabet soup, I never thought that it would pay off](#task-4)
-- [5. Numbers](#task-5)
-- [6. Numberz](#task-6)
-- [7. Smile in the mirror](#task-7)
-- [8. Hexadecimal](#task-8)
-- [9. Patience, persistence and perspiration make an unbeatable combination for success](#task-9)
-- [10. 00...99](#task-10)
-- [11. Inventing is a combination of brains and materials. The more brains you use, the less material you need](#task-11)
-- [12. The success combination in business is: Do what you do better... and: do more of what you do...](#task-12)
-- [13. Software is eating the World](#task-13)
-
-
 ## Learning Objectives - Answers
 
 ### - What are the arithmetic operators and how to use them
@@ -423,8 +406,6 @@ This program will assign a random number to the variable `n` each time it is exe
         -   if the number is less than 0: `is negative`
     -   followed by a new line
 
-- [Source Code](https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c)
-
 > Compiled with:
 >```
 >gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative
@@ -440,7 +421,6 @@ This program will assign a random number to the variable `n` each time it is exe
 >1 is positive
 >```
 
-
 </details>
 
 ---
@@ -449,6 +429,7 @@ This program will assign a random number to the variable `n` each time it is exe
 <summary><a href="./1-last_digit.c">1. The last digit</a></summary><br>
 
 ### Task 1
+
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
 
 -   You can find the source code [here](https://intranet.alxswe.com/rltoken/5HWhPDsq3jq1yCRQFrLl4Q "here")
@@ -462,7 +443,6 @@ This program will assign a random number to the variable `n` each time it is exe
         -   if the last digit of `n` is 0: the string `and is 0`
         -   if the last digit of `n` is less than 6 and not 0: the string `and is less than 6 and not 0`
     -   followed by a new line
-- [Source Code](./https://github.com/holbertonschool/0x01.c/blob/master/1-last_digit_c)
 
 > Compile this way:
 >```
