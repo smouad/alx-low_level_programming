@@ -25,11 +25,11 @@ This repository contains low-level programming projects that are part of the ALX
 13.  **[0x0C-more_malloc_free](./0x0C-more_malloc_free)**: more dynamic memory allocation with malloc and free
 14.  **[0x0D-preprocessor](./0x0D-preprocessor)**: C preprocessor
 15.  **[0x0E-structures_typedef](./0x0E-structures_typedef)**: structures and typedef
+16.  **[0x0F-function_pointers](0x0F-function_pointers)**: function pointers
+17.  **[0x10-variadic_functions](0x10-variadic_functions)**: variadic functions
 
 ### In progress
 
-16.  **[0x0F-function_pointers](0x0F-function_pointers)**: function pointers
-17.  **[0x10-variadic_functions](0x10-variadic_functions)**: variadic functions
 18.  **[0x11-printf](0x11-printf)**: printf function implementation
 19.  **[0x12-singly_linked_lists](0x12-singly_linked_lists)**: singly linked lists
 20.  **[0x13-more_singly_linked_lists](0x13-more_singly_linked_lists)**: more singly linked lists
