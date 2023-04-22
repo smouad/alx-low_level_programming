@@ -15,36 +15,42 @@
 - [While Loop - Youtube](https://youtu.be/Ju1LYO9pkaI)
 
 ## Learning Objectives
-- [What are the arithmetic operators and how to use them](#what-are-the-arithmetic-operators-and-how-to-use-them)
-- [What are the logical operators (sometimes called boolean operators) and how to use them](#what-are-the-logical-operators-sometimes-called-boolean-operators-and-how-to-use-them)
-- [What the the relational operators and how to use them](#what-the-the-relational-operators-and-how-to-use-them)
-- [What values are considered TRUE and FALSE in C](#what-values-are-considered-true-and-false-in-c)
-- [What are the boolean operators and how to use them](#what-are-the-boolean-operators-and-how-to-use-them)
-- [How to use the `if`, `if ... else` statements](#how-to-use-the-if-if--else-statements)
-- [How to use comments](#how-to-use-comments)
-- [How to declare variables of types `char`, `int`, `unsigned int`](#how-to-declare-variables-of-types-char-int-unsigned-int)
-- [How to assign values to variables](#how-to-assign-values-to-variables)
-- [How to print the values of variables of type `char`, `int`, `unsigned int` with `printf`](#how-to-print-the-values-of-variables-of-type-char-int-unsigned-int-with-printf)
-- [How to use the `while` loop](#how-to-use-the-while-loop)
-- [How to use variables with the `while` loop](#how-to-use-variables-with-the-while-loop)
-- [How to print variables using `printf`](#how-to-print-variables-using-printf)
-- [What is the `ASCII` character set](#what-is-the-ascii-character-set)
-- [What are the purpose of the `gcc` flags `-m32` and `-m64`](#what-are-the-purpose-of-the-gcc-flags-m32-and-m64)
+- [0x01. C - Variables,if,else,while](#0x01-c---variablesifelsewhile)
+  - [Resources](#resources)
+  - [Learning Objectives](#learning-objectives)
+    - [- What are the arithmetic operators and how to use them](#--what-are-the-arithmetic-operators-and-how-to-use-them)
+    - [- What are the logical operators (sometimes called boolean operators) and how to use them](#--what-are-the-logical-operators-sometimes-called-boolean-operators-and-how-to-use-them)
+    - [- What the relational operators and how to use them](#--what-the-relational-operators-and-how-to-use-them)
+    - [- What values are considered TRUE and FALSE in C](#--what-values-are-considered-true-and-false-in-c)
+    - [- What are the boolean operators and how to use them](#--what-are-the-boolean-operators-and-how-to-use-them)
+    - [- How to use the `if`, `if ... else` statements](#--how-to-use-the-if-if--else-statements)
+    - [- How to use comments](#--how-to-use-comments)
+    - [- How to declare variables of types `char`, `int`, `unsigned int`](#--how-to-declare-variables-of-types-char-int-unsigned-int)
+    - [- How to assign values to variables](#--how-to-assign-values-to-variables)
+    - [- How to print the values of variables of type `char`, `int`, `unsigned int` with `printf`](#--how-to-print-the-values-of-variables-of-type-char-int-unsigned-int-with-printf)
+    - [- How to use the `while` loop](#--how-to-use-the-while-loop)
+    - [- How to use variables with the `while` loop](#--how-to-use-variables-with-the-while-loop)
+    - [- How to print variables using `printf`](#--how-to-print-variables-using-printf)
+    - [- What is the `ASCII` character set](#--what-is-the-ascii-character-set)
+    - [- What are the purpose of the `gcc` flags `-m32` and `-m64`](#--what-are-the-purpose-of-the-gcc-flags--m32-and--m64)
+  - [Tasks](#tasks)
+  - [Notes](#notes)
+    - [`?:` operator](#-operator)
+      - [Example](#example)
 
-## Learning Objectives - Answers
 
 ### - What are the arithmetic operators and how to use them
 Arithmetic operators are operators used in mathematical expressions in programming. Here are the commonly used arithmetic operators in C++:
 
 
 
-| Operator	| Operation          |
-|-----------|--------------------|
-| +	        | Addition           |
-| -	        | Subtraction        |
-| *	        | Multiplication     |
-| /	        | Division           |
-| %	        | Modulo (Remainder) |
+| Operator | Operation          |
+| -------- | ------------------ |
+| +        | Addition           |
+| -        | Subtraction        |
+| *        | Multiplication     |
+| /        | Division           |
+| %        | Modulo (Remainder) |
 
 Example of arithmetic operators in C:
 
@@ -332,7 +338,7 @@ int main()
 To print variables using `printf`, you need to use format specifiers to specify the type of the variable being printed. Here are the format specifiers for the most common types of variables:
 
 | Type | Format Specifier                 |
-|------|----------------------------------|
+| ---- | -------------------------------- |
 | %d   | for int                          |
 | %u   | for unsigned int                 |
 | %c   | for char                         |
@@ -392,8 +398,6 @@ gcc -m64 -o program program.c
 <details>
 <summary><a href="./0-positive_or_negative.c">0. Positive anything is better than negative nothing</a></summary><br>
 
-### Task 0
-
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative.
 
 -   You can find the source code [here](https://intranet.alxswe.com/rltoken/rrqNDWjrCWdARnWFLPExPw "here")
@@ -427,8 +431,6 @@ This program will assign a random number to the variable `n` each time it is exe
 
 <details>
 <summary><a href="./1-last_digit.c">1. The last digit</a></summary><br>
-
-### Task 1
 
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
 
@@ -466,7 +468,6 @@ This program will assign a random number to the variable `n` each time it is exe
 <details>
 <summary><a href="./2-print_alphabet.c">2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</a></summary><br>
 
-### Task 2
 
 Write a program that prints the alphabet in lowercase, followed by a new line.
 
@@ -516,7 +517,6 @@ Write a program that prints the alphabet in lowercase, and then in uppercase, fo
 <details>
 <summary><a href="./4-print_alphabt.c">4. When I was having that alphabet soup, I never thought that it would pay off</a></summary><br>
 
-### Task 4
 
 Write a program that prints the alphabet in lowercase, followed by a new line.
 
@@ -545,8 +545,6 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
 <details>
 <summary><a href="./5-print_numbers.c">5. Numbers</a></summary><br>
 
-### Task 5
-
 Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
 
 -   All your code should be in the `main` function
@@ -568,8 +566,6 @@ Write a program that prints all single digit numbers of base 10 starting from `0
 
 <details>
 <summary><a href="./6-print_numberz.c">6. Numberz</a></summary><br>
-
-### Task 6
 
 Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
 
@@ -601,8 +597,6 @@ Write a program that prints all single digit numbers of base 10 starting from `0
 <details>
 <summary><a href="./7-print_tebahpla.c">7. Smile in the mirror</a></summary><br>
 
-### Task 7
-
 Write a program that prints the lowercase alphabet in reverse, followed by a new line.
 
 -   You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
@@ -626,8 +620,6 @@ Write a program that prints the lowercase alphabet in reverse, followed by a new
 
 <details>
 <summary><a href="./8-print_base16.c">8. Hexadecimal</a></summary><br>
-
-### Task 8
 
 Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
 
@@ -653,7 +645,6 @@ Write a program that prints all the numbers of base 16 in lowercase, followed by
 <details>
 <summary><a href="./9-print_comb.c">9. Patience, persistence and perspiration make an unbeatable combination for success</a></summary><br>
 
-### Task 9
 
 Write a program that prints all possible combinations of single-digit numbers.
 
@@ -682,7 +673,6 @@ Write a program that prints all possible combinations of single-digit numbers.
 <details>
 <summary><a href="./100-print_comb3.c">10. Inventing is a combination of brains and materials. The more brains you use, the less material you need</a></summary><br>
 
-### Task 10
 
 Write a program that prints all possible different combinations of two digits.
 
@@ -714,7 +704,6 @@ Write a program that prints all possible different combinations of two digits.
 <details>
 <summary><a href="./101-print_comb4.c">11. The success combination in business is: Do what you do better... and: do more of what you do...</a></summary><br>
 
-### Task 11
 
 Write a program that prints all possible different combinations of three digits.
 
@@ -746,7 +735,6 @@ Write a program that prints all possible different combinations of three digits.
 <details>
 <summary><a href="./102-print_comb5.c">12. Software is eating the World</a></summary><br>
 
-### Task 12
 
 Write a program that prints all possible combinations of two two-digit numbers.
 

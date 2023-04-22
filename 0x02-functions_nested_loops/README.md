@@ -8,19 +8,219 @@
 - [C - Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)
 - [C - Books and PDF's](../references) to check out and use as reference.
 
+## Learning Objectives
 
-## Tests
+- [What are nested loops and how to use them](what-are-nested-loops-and-how-to-use-them)
+- [What is a function and how do you use functions](what-is-a-function-and-how-do-you-use-functions)
+- [What is the difference between a declaration and a definition of a function](what-is-the-difference-between-a-declaration-and-a-definition-of-a-function)
+- [What is a prototype](what-is-a-prototype)
+- [Scope of variables](scope-of-variables)
+- [What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89](what-are-the-gcc-flags--Wall--Werror--pedantic--Wextra--std=gnu89)
+- [What are header files and how to to use them with #include](what-are-header-files-and-how-to-to-use-them-with-#include)
 
-- A [Makefile](./Makefile) is provided to compile all the tests.
-- Usage: `make [test_name]`
-- Example: `make 1` will compile and run the test for task 1.
-- Example: `make check-all` will compile and run all tests.
-- Example:`make clean` will remove all executable files.
-- Some test's output will not be displayed in the terminal only `SUCCESS` or `FAILURE`.
-- To print the full output of the particular test, run the executable file directly using `./[test_name]`.
-- All tests are in the [tests](./tests) directory.
-- All tests are compiled with `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -g3 -o <name_of_test> <name_of_test>.c <name_of_file>.c`
-- All tests are run with `./<name_of_test>`
+---
+
+- ### What are nested loops and how to use them
+
+In C, nested loops are loops within loops. They allow you to iterate through a set of data that is organized in a nested structure, such as a matrix or a two-dimensional array.
+
+Here's an example of how to use nested loops in C:
+
+```c
+#include <stdio.h>
+
+int main()
+{
+   int rows = 3, cols = 3;
+
+   for(int i = 0; i < rows; i++)/* outer loop */
+   {
+      for(int j = 0; j < cols; j++) /* inner loop */
+         printf("(%d, %d)\n", i, j);
+   }
+   return 0;
+}
+``` 
+
+In this code, the outer loop iterates over the rows of the matrix, while the inner loop iterates over the columns. For each combination of `i` and `j`, the `printf` statement prints out the values of `i` and `j` in parentheses.
+
+The output of this code would be:
+
+```
+(0, 0)
+(0, 1)
+(0, 2)
+(1, 0)
+(1, 1)
+(1, 2)
+(2, 0)
+(2, 1)
+(2, 2)
+``` 
+
+This is because the inner loop executes 3 times for each iteration of the outer loop.
+
+---
+
+- ### What is a function and how do you use functions
+
+A function is a block of code that performs a specific task, and can be called or invoked from other parts of your program. Functions allow you to break down your code into smaller, more manageable pieces, making it easier to write, test, and maintain your code.
+
+Here's an example of how to define and use a function in C:
+```c
+#include <stdio.h>
+
+void greet(char *name)
+{
+    printf("Hello, %s!\n", name);
+}
+
+int main()
+{
+    char *name1 = "Alice";
+    char *name2 = "Bob";
+    greet(name1);
+    greet(name2);
+    return 0;
+}
+```
+Output:
+```
+Hello, Alice!
+Hello, Bob!
+```
+
+In this example, the `greet()` function takes a single argument `name` of type `char *`, which is a pointer to a string. The function prints a personalized greeting using the input `name`.
+To declare a function in C, you typically start with the return type of the function (e.g., `void` for functions that don't return a value), followed by the name of the function, and any arguments it takes in parentheses. Here's an example:
+
+```c
+return_type function_name(argument_type argument_name)
+{
+    /* function body */ 
+}
+``` 
+For example, the `greet()` function could be declared like this:
+
+```c
+void greet(char *name);
+```
+---
+
+- ### What is the difference between a declaration and a definition of a function
+
+In C, a declaration is used to inform the `compiler` that the function exists, so that the compiler can verify that the function is being used correctly.
+
+Here's an example of a function declaration in C:
+```c
+int add(int x, int y);
+``` 
+This declares a function named `add` that takes two integer arguments and returns an integer.
+
+On the other hand, a definition of a function is a statement that provides the full implementation of the function. A function definition includes the code that defines what the function does.
+
+Here's an example of a function definition in C:
+```c
+int add(int x, int y)
+{
+    return x + y;
+}
+``` 
+
+This defines a function named `add` that takes two integer arguments and returns their sum.
+
+>**Summary:**
+In summary, the difference between a declaration and a definition of a function in C is that a declaration provides information about the function (its name, return type, and argument types) without providing its implementation, while a definition provides the full implementation of the function.
+
+---
+
+- ### What is a prototype
+
+A protoype is simply the declaration of the function
+```c
+int add(int x, int y);
+``` 
+The declaration followed by a `;`
+
+---
+
+- ### Scope of variables
+
+
+In programming, the scope of a variable is the region of the program where the variable is visible and accessible. In other words, it defines the part of the program where the variable can be used and manipulated.
+
+In C, there are three types of variable scope:
+
+1.  Local scope: Variables declared inside a function have local scope, which means they are only visible and accessible within that function. Once the function completes its execution, the memory used by the local variable is released and the variable is destroyed.
+    
+2.  Global scope: Variables declared outside of any function have global scope, which means they are visible and accessible throughout the entire program. Global variables are initialized only once, at the start of the program, and remain in memory until the program terminates.
+    
+3.  Block scope: Variables declared inside a block, such as a for loop or an if statement, have block scope, which means they are visible and accessible only within that block. Once the block completes its execution, the memory used by the block variable is released and the variable is destroyed.
+
+Here's an example to illustrate the scope of variables in C:
+
+```c
+#include <stdio.h>
+
+int global_var = 10; /* Global variable */
+
+void test_function() 
+{
+   int local_var = 20; /* Local variable */
+   printf("Global variable = %d\n", global_var);
+   printf("Local variable = %d\n", local_var);
+}
+
+int main()
+{
+   int block_var = 30; /* Block variable */ 
+   printf("Global variable = %d\n", global_var);
+   test_function();
+   printf("Block variable = %d\n", block_var);
+   return 0;
+}
+``` 
+
+In this example, `global_var` has global scope and can be accessed from both `main` and `test_function`. `local_var` has local scope and can only be accessed within `test_function`. `block_var` has block scope and can only be accessed within `main`.
+
+---
+
+- ### What are the `gcc` flags `-Wall -Werror -pedantic -Wextra -std=gnu89`
+
+The `gcc` flags `-Wall`, `-Werror`, `-pedantic`, `-Wextra`, and `-std=gnu89` are used to set certain options and warning levels when compiling C code with the GCC compiler. Here's what each flag does:
+
+-   `-Wall`: Shows all warning messages during compilation.
+-   `-Werror`: Treats all warnings as errors.
+-   `-pedantic`: Generates warnings for non-standard C language features.
+-   `-Wextra`: Enables additional warning messages.
+-   `-std=gnu89`: Specifies the C language standard to use during compilation as the GNU C dialect of the 1989 C standard.
+
+Overall, these flags can help to ensure that code is written in a way that avoids errors, adheres to standards, and is easy to read and maintain.
+
+---
+
+- ### What are header files and how to to use them with `#include`
+
+
+In C, when you use `#include` with double quotes (`""`), the preprocessor searches for the header file in the current directory first, before searching the standard system directories. This is in contrast to using angle brackets (`<>`), where the preprocessor only searches the standard system directories.
+
+To include a header file in your C program, you use the `#include` preprocessor directive, like this:
+
+```c
+#include <header_file_name.h>  /* for system headers */ 
+``` 
+or
+```c
+#include "header_file_name.h"  /*for local headers*/
+``` 
+
+Here, `header_file_name` is the name of the header file you want to include, and `.h` is the file extension commonly used for C header files.
+
+Once included, you can use the functions, variables, and other constructs declared in the header file in your program.
+
+It's important to include all the necessary header files for your program to compile and execute without errors. In general, it's recommended to use `#include` with angle brackets for system headers and `#include` with double quotes for local headers to avoid potential conflicts.
+
+
+---
 
 ## Tasks
 
