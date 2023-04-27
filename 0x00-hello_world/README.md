@@ -1,5 +1,5 @@
 
-# 0x00. C -Hello, World
+**<h1 align='center'>0x00. C -Hello, World</h1>**
 
 ## Resources
 

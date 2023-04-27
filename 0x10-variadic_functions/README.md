@@ -1,5 +1,5 @@
 
-# 0x10. C - Variadic functions
+**<h1 align='center'>0x10. C - Variadic functions</h1>**
 
 ## Resources
 - [stdarg.h](https://en.wikipedia.org/wiki/Stdarg.h)
@@ -313,3 +313,5 @@ $
 ```
 
 </details>
+
+---

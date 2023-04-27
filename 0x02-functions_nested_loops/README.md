@@ -1,4 +1,4 @@
-# 0x02. C - Functions, nested loops
+**<h1 align='center'>0x02. C - Functions, nested loops</h1>**
 
 ## Resources
 
