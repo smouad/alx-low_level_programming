@@ -8,7 +8,7 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-	int len, i;
+	int len;
 	list_t *new;
 
 	for (len = 0; str[len]; len++)
