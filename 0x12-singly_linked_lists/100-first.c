@@ -3,8 +3,9 @@
 /**
  * first - executes before the main function
 */
-void __attribute__ ((constructor)) first()
+__attribute__ ((constructor))
+void first(void)
 {
-	printf("You're beat! and yet, you must allow,\n
-	I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
