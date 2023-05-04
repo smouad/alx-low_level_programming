@@ -6,7 +6,7 @@
 */
 void print_binary(unsigned long int n)
 {
-	int count = 31;
+	int count = 63;
 
 	while ((n & 1 << count) == 0 && count > 0)
 		count--;
