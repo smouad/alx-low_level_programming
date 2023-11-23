@@ -4,6 +4,7 @@
  * print_binary - print a binary of @n
  * @n: to ptint
 */
+
 void print_binary(unsigned long int n)
 {
 	if (n > 1)

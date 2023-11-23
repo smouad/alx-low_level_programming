@@ -6,7 +6,6 @@
  * @b: the string
  * Return: the unsigned int or 0 if it fails
 */
-
 unsigned int binary_to_uint(const char *b)
 {
 	int len, count = 0;

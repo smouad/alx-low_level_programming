@@ -1,1 +1,1 @@
-bit manipulation updated
+bit manipulation update
