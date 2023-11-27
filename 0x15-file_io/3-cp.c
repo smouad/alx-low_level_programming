@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - copies the content of a file to another file
- * @argc: number of arguments passed to the program
- * @argv: array of arguments
+ * main - Entry point. Copies the content of one file to another.
+ * @argc: The number of arguments passed to the program.
+ * @argv: An array of arguments.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success).
  */
 int main(int argc, char *argv[])
 {
